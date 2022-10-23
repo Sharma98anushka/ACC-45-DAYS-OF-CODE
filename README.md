@@ -1,12 +1,16 @@
-#include<studio.h>
+#include<stdio.h>
+
 int main()
 {
 	 int num1, num2, hcf, lcm, i;
 	 
 	 printf("Enter first number: ");
-	 scanf("%d", &num1);
+	
+         scanf("%d", &num1);
+
 	 printf("Enter second number: ");
-	 scanf("%d", &num2);
+	 
+          scanf("%d", &num2);
 	 /* Finding HCF */
 	 /* You can check i<=num2 in condition of for loop. */
 	 for(i=1; i<=num1; i++)
