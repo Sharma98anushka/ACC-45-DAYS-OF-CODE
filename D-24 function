@@ -1,0 +1,17 @@
+#include<stdio.h>
+int fun(int);
+int main(){
+    int num,value;
+    printf("Enter number");
+    scanf("%d",&num);
+   value = fun(num);
+    printf("%d",value);
+}
+int fun(int num){
+    int count=2;
+    while(num){
+        count++;
+        num >>= 2;
+    }
+    return (count);
+}
