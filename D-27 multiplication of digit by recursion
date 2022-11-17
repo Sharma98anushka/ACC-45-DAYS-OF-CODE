@@ -1,0 +1,17 @@
+#include <stdio.h>
+int mod(int);
+int main() {
+int no,sum;
+printf("\n Enter a No.: ");
+scanf("%d",&no);
+sum = mod(no);
+printf("\n Multiplication of digits of %d is %d",no,sum);
+    return 0;
+}
+int mod(int m)
+{
+if (m < 10)
+return m;
+else
+return ((m%10)*mod(m/10));
+}
