@@ -1,0 +1,20 @@
+#include <stdio.h>
+int powr(int,int);
+int main() {
+int n,p,r;
+printf("\n Enter a No.: ");
+scanf("%d",&n);
+printf("\n Enter Value of Power: ");
+scanf("%d",&p);
+r = powr(n,p);
+printf("\n %d to the power %d is %d",n,p,r);
+    return 0;
+}
+int powr(int m,int n)
+{
+if(n == 1)
+return m;
+else
+return (m * powr(m,n-1));
+}
+
