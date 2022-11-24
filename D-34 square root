@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+int sr,n;
+printf("Enter a number: ");
+scanf("%d",&n);
+sr=pow(n,0.5);
+if((n*n)%sr==0)
+printf("%d",sr);
+else{
+	printf("0");
+}
+return 0;
+}
