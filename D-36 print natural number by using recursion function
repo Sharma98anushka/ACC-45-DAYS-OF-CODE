@@ -1,0 +1,15 @@
+#include<stdio.h>
+int natural(int ,int);
+int main(){
+int a,b;
+printf("Enter the natural no.limit (from a to b) : ");
+scanf("%d %d",&a,&b);
+natural(a,b);
+return 0;
+}
+int natural(int i,int j){
+	if(i>j)
+	return;
+	printf("%d\t",i);
+	 natural(i+1,j);
+}
