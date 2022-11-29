@@ -1,0 +1,29 @@
+#include<stdio.h>
+int large(int n,int a[100]){
+    int i,large=0;
+    for(i=0;i<n;i++){
+        if(large<a[i])
+        large=a[i];
+    }
+    printf("large=%d",large);
+}
+int sum(int n,int a[100]){
+    int i,sum=0;
+    for(i=0;i<n;i++){
+        sum+=a[i];
+    }
+    printf("Sum=%d",sum);
+}
+
+int main(){
+    int a[100],*p,n;
+    p=&a[0];
+    printf("Enter the size of array: ");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",(p+i));
+    }
+large(n,p);
+sum(n,p);
+    return 0;
+}
