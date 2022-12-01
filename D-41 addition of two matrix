@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main(){
+int a[100][100],b[100][100],sum[100][100],r,c,i,j;
+printf("Enter a no.of rows");
+scanf("%d",&r);
+printf("Enter a no. of columns");
+scanf("%d",&c);
+for(i=0;i<r;i++){
+    for(j=0;j<c;j++){
+        printf("a[%d][%d]",i,j);
+        scanf("%d",&a[i][j]);
+    }
+}
+for(i=0;i<r;i++){
+    for(j=0;j<c;j++){
+     printf("b[%d][%d]",i,j);
+        scanf("%d",&b[i][j]);
+    }
+}
+printf("The sum of matrix is:\n ");
+for(i=0;i<r;i++){
+    for(j=0;j<c;j++){
+        sum[i][j]=0;
+        sum[i][j]=a[i][j]+b[i][j];
+printf("%d\t",sum[i][j]);
+    }
+        printf("\n");
+
+}
+
+
+return 0;
+}
