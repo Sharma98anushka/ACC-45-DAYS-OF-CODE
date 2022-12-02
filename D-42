@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main(){
+int a[100][100],b[100][100],count=0,r,c,i,j;
+printf("Enter a no.of rows");
+scanf("%d",&r);
+printf("Enter a no. of columns");
+scanf("%d",&c);
+for(i=0;i<r;i++){
+    for(j=0;j<c;j++){
+        printf("a[%d][%d]",i,j);
+        scanf("%d",&a[i][j]);
+    }
+}
+for(i=0;i<r;i++){
+    for(j=0;j<c;j++){
+     printf("b[%d][%d]",i,j);
+        scanf("%d",&b[i][j]);
+    }
+}
+for(i=0;i<r;i++){
+    for(j=0;j<c;j++){
+        if(a[i][j]==b[i][j]){
+count++;
+        }
+    }
+}
+if(count==(r*c)){
+    printf("Matrix are equal");
+}
+else{
+    printf("Matrix are not equal");
+}
+
+
+return 0;
+}
